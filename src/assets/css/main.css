@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Hlavní CSS soubor - main.css
+   Importuje všechny ostatní CSS soubory
+   ========================================================================== */
+
+/* CSS proměnné - barvy, fonty, velikosti */
+@import "variables.css";
+
+/* Reset a základní typografie */
+@import "base.css";
+
+/* Gridy, flexy, kontejnery, mezery */
+@import "layout.css";
+
+/* Vzhled komponent (header, footer, cards, buttons...) */
+@import "components.css";
+
+/* Media queries pro responzivní design */
+@import "responsive.css";

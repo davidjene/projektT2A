@@ -1,0 +1,140 @@
+/* ==========================================================================
+   CSS Proměnné - variables.css
+   Barvy, fonty, marginy, velikosti
+   ========================================================================== */
+
+:root {
+  /* Primární barvy */
+  --color-primary: #1e3c72;
+  --color-primary-dark: #162c52;
+  --color-primary-light: #2a5298;
+  
+  /* Sekundární barvy */
+  --color-secondary: #7e8ba3;
+  
+  /* Akcentové barvy */
+  --color-success: #2ecc71;
+  --color-success-dark: #27ae60;
+  --color-danger: #e74c3c;
+  --color-danger-dark: #c0392b;
+  --color-warning: #f39c12;
+  --color-info: #3498db;
+  
+  /* Neutrální barvy */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+  
+  /* Textové barvy */
+  --color-text: #333333;
+  --color-text-light: #555555;
+  --color-text-muted: #6c757d;
+  --color-text-inverse: #ffffff;
+  
+  /* Barvy pozadí */
+  --color-bg-body: #f8f9fa;
+  --color-bg-white: #ffffff;
+  --color-bg-dark: #2c3e50;
+  --color-bg-footer: #2c3e50;
+  
+  /* Barvy odkazů */
+  --color-link: #1e3c72;
+  --color-link-hover: #2a5298;
+  
+  /* Barvy cen */
+  --color-price: #2ecc71;
+  --color-price-old: #999999;
+  
+  /* Barvy hvězdiček */
+  --color-rating: #ffa500;
+  
+  /* Fonty */
+  --font-family-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-heading: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+  /* Velikosti písma */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.85rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.1rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  
+  /* Tloušťky písma */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Výška řádku */
+  --line-height-base: 1.6;
+  --line-height-tight: 1.2;
+  --line-height-relaxed: 1.8;
+  
+  /* Odsazení (margin/padding) */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 5rem;
+  
+  /* Velikosti kontejneru */
+  --container-max-width: 1200px;
+  --container-padding: 20px;
+  
+  /* Border radius */
+  --border-radius-sm: 5px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 10px;
+  --border-radius-xl: 12px;
+  --border-radius-2xl: 15px;
+  --border-radius-3xl: 20px;
+  --border-radius-full: 50px;
+  --border-radius-circle: 50%;
+  
+  /* Stíny */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --shadow-2xl: 0 15px 40px rgba(0, 0, 0, 0.2);
+  --shadow-header: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --shadow-button: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --shadow-button-hover: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-primary: 0 5px 15px rgba(30, 60, 114, 0.3);
+  --shadow-success: 0 5px 15px rgba(46, 204, 113, 0.3);
+  
+  /* Přechody */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-indexy */
+  --z-index-dropdown: 100;
+  --z-index-sticky: 500;
+  --z-index-header: 1000;
+  --z-index-modal: 2000;
+  --z-index-tooltip: 3000;
+  
+  /* Gradienty */
+  --gradient-primary: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+  --gradient-primary-simple: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  --gradient-success: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  --gradient-body: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+}
