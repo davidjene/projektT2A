@@ -1,0 +1,85 @@
+<!-- ==========================================================================
+   PRODUCT CARD KOMPONENTA
+   Použití: Zkopírujte tento kód pro každý produkt v gridu produktů.
+   Upravte hodnoty podle konkrétního produktu.
+   ========================================================================== -->
+
+<div class="product-card">
+  <div class="product-image">
+    <img
+      src="https://via.placeholder.com/300x300/FF6B35/ffffff?text=Produkt"
+      alt="Název produktu"
+    />
+    <!-- Volitelné: badge pro novinka/sleva -->
+    <span class="badge">Novinka</span>
+    <!-- nebo pro slevu: <span class="badge sale">Sleva</span> -->
+    
+    <!-- Volitelné: badge skladové dostupnosti -->
+    <div class="product-badges">
+      <span class="stock-badge in-stock">Skladem</span>
+      <!-- nebo: <span class="stock-badge low-stock">Poslední kusy</span> -->
+      <!-- nebo: <span class="stock-badge out-stock">Vyprodáno</span> -->
+    </div>
+  </div>
+  <div class="product-info">
+    <!-- Volitelné: značka produktu -->
+    <div class="product-brand">Název značky</div>
+    <h3>Název produktu</h3>
+    <p class="product-description">
+      Krátký popis produktu (max 2 řádky)
+    </p>
+    <!-- Volitelné: hodnocení -->
+    <div class="product-rating">
+      ⭐⭐⭐⭐⭐ <span class="rating-count">(24)</span>
+    </div>
+    <div class="product-price">
+      <span class="price">1 999 Kč</span>
+      <!-- Volitelné: původní cena při slevě -->
+      <span class="old-price">2 499 Kč</span>
+    </div>
+    <a href="detail.html" class="btn-add-to-cart">Prohlédnout si</a>
+  </div>
+</div>
+
+<!-- ==========================================================================
+   VARIANTY PRODUCT CARD:
+   
+   1. ZÁKLADNÍ KARTA (bez badge, bez hodnocení):
+   ========================================================================== -->
+<!--
+<div class="product-card">
+  <div class="product-image">
+    <img src="URL_OBRAZKU" alt="Název produktu" />
+  </div>
+  <div class="product-info">
+    <h3>Název produktu</h3>
+    <p class="product-description">Popis produktu</p>
+    <div class="product-price">
+      <span class="price">999 Kč</span>
+    </div>
+    <a href="detail.html" class="btn-add-to-cart">Prohlédnout si</a>
+  </div>
+</div>
+-->
+
+<!-- ==========================================================================
+   2. KARTA SE SLEVOU:
+   ========================================================================== -->
+<!--
+<div class="product-card">
+  <div class="product-image">
+    <img src="URL_OBRAZKU" alt="Název produktu" />
+    <span class="badge sale">Sleva</span>
+  </div>
+  <div class="product-info">
+    <div class="product-brand">Značka</div>
+    <h3>Název produktu</h3>
+    <p class="product-description">Popis produktu</p>
+    <div class="product-price">
+      <span class="price">799 Kč</span>
+      <span class="old-price">999 Kč</span>
+    </div>
+    <a href="detail.html" class="btn-add-to-cart">Prohlédnout si</a>
+  </div>
+</div>
+-->
