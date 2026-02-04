@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík - Krok 1: Adresa - ClimbZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="kosik-simple-styles.css">
+</head>
+<body>
+    <!-- Hlavička -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="kategorie.html">Kategorie</a></li>
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="vyhledavani.html" class="icon-link">
+                        <span class="icon">🔍</span>
+                    </a>
+                    <a href="prihlaseni.html" class="icon-link">
+                        <span class="icon">👤</span>
+                    </a>
+                    <a href="oblibene.html" class="icon-link">
+                        <span class="icon">❤️</span>
+                    </a>
+                    <a href="nakupni-kosik.html" class="icon-link cart">
+                        <span class="icon">🛒</span>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Domů</a>
+            <span class="separator">/</span>
+            <span class="current">Košík - Krok 1</span>
+        </div>
+    </div>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <h1 class="page-title">Nákupní košík</h1>
+
+                <!-- Progressbar kroků -->
+                <div class="steps-progress">
+                    <div class="step active">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Adresa</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Doprava a platba</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Shrnutí</div>
+                    </div>
+                </div>
+
+                <!-- Obsah -->
+                <div class="cart-content">
+                    <!-- Levá strana - Formulář -->
+                    <div class="cart-main">
+                        <div class="step-header">
+                            <h2>1. Dodací adresa</h2>
+                            <p>Vyplňte prosím dodací údaje</p>
+                        </div>
+
+                        <form action="kosikkrok2.html" method="get" class="address-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Jméno *</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="Jan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Příjmení *</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Novák">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="jan.novak@email.cz">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+420 123 456 789">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="street">Ulice a č.p. *</label>
+                                <input type="text" id="street" name="street" required placeholder="Hlavní 123">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">Město *</label>
+                                    <input type="text" id="city" name="city" required placeholder="Praha">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">PSČ *</label>
+                                    <input type="text" id="zip" name="zip" required placeholder="110 00">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country">Země *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Vyberte zemi</option>
+                                    <option value="cz" selected>Česká republika</option>
+                                    <option value="sk">Slovensko</option>
+                                    <option value="pl">Polsko</option>
+                                    <option value="de">Německo</option>
+                                    <option value="at">Rakousko</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="note">Poznámka k objednávce (volitelné)</label>
+                                <textarea id="note" name="note" rows="4" placeholder="Zde můžete uvést dodatečné informace k doručení..."></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="different-billing" name="different-billing">
+                                <label for="different-billing">Fakturační adresa je jiná než dodací</label>
+                            </div>
+
+                            <button type="submit" class="btn-next" action="kosikkrok2.html">
+                                Pokračovat na dopravu
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Pravá strana - Souhrn košíku -->
+                    <aside class="cart-sidebar">
+                        <div class="cart-summary">
+                            <h3>Souhrn objednávky</h3>
+                            
+                            <div class="summary-line">
+                                <span>Produkty (3 ks)</span>
+                                <span>6 496 Kč</span>
+                            </div>
+                            
+                            <div class="summary-line">
+                                <span>Doprava</span>
+                                <span class="gray-text">Vyberte v kroku 2</span>
+                            </div>
+                            
+                            <div class="summary-line">
+                                <span>Platba</span>
+                                <span class="gray-text">Vyberte v kroku 2</span>
+                            </div>
+                            
+                            <div class="summary-divider"></div>
+                            
+                            <div class="summary-total">
+                                <span>Mezisoučet</span>
+                                <span>6 496 Kč</span>
+                            </div>
+
+                            <div class="trust-badges">
+                                <div class="trust-item">
+                                    <span class="trust-icon">✓</span>
+                                    <span>Bezpečná platba</span>
+                                </div>
+                                <div class="trust-item">
+                                    <span class="trust-icon">✓</span>
+                                    <span>Ověřený e-shop</span>
+                                </div>
+                                <div class="trust-item">
+                                    <span class="trust-icon">✓</span>
+                                    <span>14denní vrácení</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Produkty v košíku -->
+                        <div class="cart-items-preview">
+                            <h4>Produkty v košíku</h4>
+                            
+                            <div class="cart-item-mini">
+                                <img src="https://via.placeholder.com/60x60/FF6B35/ffffff?text=1" alt="Lano">
+                                <div class="item-mini-info">
+                                    <span class="item-mini-name">Dynamické lano 60m</span>
+                                    <span class="item-mini-price">1× 3 499 Kč</span>
+                                </div>
+                            </div>
+
+                            <div class="cart-item-mini">
+                                <img src="https://via.placeholder.com/60x60/004E89/ffffff?text=2" alt="Sedák">
+                                <div class="item-mini-info">
+                                    <span class="item-mini-name">Horolezecký sedák</span>
+                                    <span class="item-mini-price">1× 2 299 Kč</span>
+                                </div>
+                            </div>
+
+                            <div class="cart-item-mini">
+                                <img src="https://via.placeholder.com/60x60/1A936F/ffffff?text=3" alt="Karabina">
+                                <div class="item-mini-info">
+                                    <span class="item-mini-name">Karabina HMS</span>
+                                    <span class="item-mini-price">2× 349 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>O nás</h4>
+                    <p>Specializujeme se na kvalitní horolezecké a outdoorové vybavení pro lezce všech úrovní.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Zákaznický servis</h4>
+                    <ul>
+                        <li><a href="#">Časté dotazy</a></li>
+                        <li><a href="#">Doprava a platba</a></li>
+                        <li><a href="#">Reklamace</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Důležité odkazy</h4>
+                    <ul>
+                        <li><a href="#">Obchodní podmínky</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sledujte nás</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=cs_CZ">Facebook</a>
+                        <a href="https://www.instagram.com/?hl=cs">Instagram</a>
+                        <a href="https://x.com/?lang=cs">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ClimbZone. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

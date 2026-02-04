@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výsledky vyhledávání - ClimbZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="produkty-styles.css">
+    <link rel="stylesheet" href="vyhledavani-styles.css">
+</head>
+<body>
+    <!-- Hlavička -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="kategorie.html">Kategorie</a></li>
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="vyhledavani.html" class="icon-link">
+                        <span class="icon">🔍</span>
+                    </a>
+                    <a href="prihlaseni.html" class="icon-link">
+                        <span class="icon">👤</span>
+                    </a>
+                    <a href="oblibene.html" class="icon-link">
+                        <span class="icon">❤️</span>
+                    </a>
+                    <a href="nakupni-kosik.html" class="icon-link cart">
+                        <span class="icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Domů</a>
+            <span class="separator">/</span>
+            <span class="current">Výsledky vyhledávání</span>
+        </div>
+    </div>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <section class="search-results-section">
+            <div class="container">
+                <!-- Vyhledávací lišta -->
+                <div class="search-bar-section">
+                    <form class="search-form" action="vyhledavani.html" method="get">
+                        <input type="text" name="q" class="search-input" placeholder="Hledat produkty..." value="lano">
+                        <button type="submit" class="search-button">
+                            <span class="search-icon">🔍</span>
+                            Hledat
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Výsledky vyhledávání -->
+                <div class="search-results-header">
+                    <h1 class="results-title">Výsledky pro: <span class="search-query">"lano"</span></h1>
+                    <p class="results-count">Nalezeno 8 produktů</p>
+                </div>
+
+                <!-- Horní panel s řazením -->
+                <div class="listing-header">
+                    <div class="sorting-section">
+                        <label for="sort-select">Řadit podle:</label>
+                        <select id="sort-select" class="sort-select">
+                            <option value="relevance">Podle relevance</option>
+                            <option value="newest">Nejnovější</option>
+                            <option value="popular">Nejoblíbenější</option>
+                            <option value="price-low">Cena: Od nejnižší</option>
+                            <option value="price-high">Cena: Od nejvyšší</option>
+                            <option value="name">Název: A-Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Layout s filtry a produkty -->
+                <div class="listing-content">
+                    <!-- Boční panel s filtry -->
+                    <aside class="filters-sidebar">
+                        <div class="filters-header">
+                            <h3>Filtrovat výsledky</h3>
+                            <button class="filter-reset">Vymazat vše</button>
+                        </div>
+
+                        <!-- Filtr podle ceny -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Cena</h4>
+                            <div class="price-inputs">
+                                <input type="number" placeholder="Od" class="price-input" value="0">
+                                <span>-</span>
+                                <input type="number" placeholder="Do" class="price-input" value="10000">
+                            </div>
+                            <button class="apply-filter-btn">Použít</button>
+                        </div>
+
+                        <!-- Filtr podle značky -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Značka</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="brand" value="petzl">
+                                    <span>Petzl</span>
+                                    <span class="filter-count">(4)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="brand" value="mammut">
+                                    <span>Mammut</span>
+                                    <span class="filter-count">(2)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="brand" value="edelrid">
+                                    <span>Edelrid</span>
+                                    <span class="filter-count">(2)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Filtr podle typu -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Typ lana</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="type" value="dynamic">
+                                    <span>Dynamické</span>
+                                    <span class="filter-count">(5)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="type" value="static">
+                                    <span>Statické</span>
+                                    <span class="filter-count">(3)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Filtr podle dostupnosti -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Dostupnost</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="availability" value="skladem">
+                                    <span>Skladem</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="availability" value="novinka">
+                                    <span>Novinka</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="availability" value="sleva">
+                                    <span>Sleva</span>
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Grid produktů -->
+                    <div class="products-area">
+                        <div class="products-grid">
+                            <!-- Produktová karta 1 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/FF6B35/ffffff?text=Dynamické+lano" alt="Dynamické lano">
+                                    <span class="badge">Novinka</span>
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Petzl</div>
+                                    <h3>Dynamické lano 60m</h3>
+                                    <p class="product-description">Profesionální lano s certifikací UIAA, průměr 9,8mm</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-count">(24)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">3 499 Kč</span>
+                                        <span class="old-price">3 999 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 2 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/2A9D8F/ffffff?text=Statické+lano" alt="Statické lano">
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Mammut</div>
+                                    <h3>Statické lano 50m</h3>
+                                    <p class="product-description">Lano pro speleologii a záchranné práce, průměr 10mm</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐ <span class="rating-count">(12)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">2 899 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 3 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/E76F51/ffffff?text=Půllano" alt="Půllano">
+                                    <span class="badge sale">Sleva</span>
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Edelrid</div>
+                                    <h3>Půllano Swift 8,9mm</h3>
+                                    <p class="product-description">Lehké půllano pro pokročilé horolezce</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-count">(18)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">3 799 Kč</span>
+                                        <span class="old-price">4 299 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 4 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/06A77D/ffffff?text=Dvojité+lano" alt="Dvojité lano">
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Petzl</div>
+                                    <h3>Dvojité lano Mambo 10,1mm</h3>
+                                    <p class="product-description">Robustní lano pro skalní i ledové lezení</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐ <span class="rating-count">(15)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">4 599 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 5 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/B5179E/ffffff?text=Vak+na+lano" alt="Vak na lano">
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Mammut</div>
+                                    <h3>Vak na lano Rope Bag</h3>
+                                    <p class="product-description">Praktický batoh na přenášení lana s podložkou</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐ <span class="rating-count">(16)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">799 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 6 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/7209B7/ffffff?text=Lano+60m" alt="Lano 60m">
+                                    <span class="badge">Novinka</span>
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Edelrid</div>
+                                    <h3>Tommy Caldwell Eco Dry 9,3mm</h3>
+                                    <p class="product-description">Ekologické lano s DuoTec Dry technologií</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-count">(22)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">4 199 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 7 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/264653/ffffff?text=Reepšnůra" alt="Reepšnůra">
+                                    <div class="product-badges">
+                                        <span class="stock-badge in-stock">Skladem</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Petzl</div>
+                                    <h3>Reepšnůra 6mm - 30m</h3>
+                                    <p class="product-description">Pomocná šnůra pro vyrovnávací bloky a prusíky</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐ <span class="rating-count">(9)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">599 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+
+                            <!-- Produktová karta 8 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/F4A261/ffffff?text=Lanová+brzda" alt="Lanová brzda">
+                                    <span class="badge sale">Sleva</span>
+                                    <div class="product-badges">
+                                        <span class="stock-badge low-stock">Poslední kusy</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-brand">Petzl</div>
+                                    <h3>Lanová brzda GriGri+</h3>
+                                    <p class="product-description">Pokročilá brzda s anti-panic funkcí</p>
+                                    <div class="product-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-count">(34)</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="price">3 299 Kč</span>
+                                        <span class="old-price">3 799 Kč</span>
+                                    </div>
+                                    <button class="btn-add-to-cart">Přidat do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Žádné další výsledky -->
+                        <div class="no-more-results">
+                            <p>To je vše! Zobrazeny všechny produkty odpovídající vašemu vyhledávání.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Související hledání -->
+                <div class="related-searches">
+                    <h3>Související hledání:</h3>
+                    <div class="search-tags">
+                        <a href="#" class="search-tag">dynamické lano</a>
+                        <a href="#" class="search-tag">statické lano</a>
+                        <a href="#" class="search-tag">lano 60m</a>
+                        <a href="#" class="search-tag">lano petzl</a>
+                        <a href="#" class="search-tag">horolezecké lano</a>
+                        <a href="#" class="search-tag">lezecké vybavení</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>O nás</h4>
+                    <p>Specializujeme se na kvalitní horolezecké a outdoorové vybavení pro lezce všech úrovní.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Zákaznický servis</h4>
+                    <ul>
+                        <li><a href="#">Časté dotazy</a></li>
+                        <li><a href="#">Doprava a platba</a></li>
+                        <li><a href="#">Reklamace</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Důležité odkazy</h4>
+                    <ul>
+                        <li><a href="#">Obchodní podmínky</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sledujte nás</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=cs_CZ">Facebook</a>
+                        <a href="https://www.instagram.com/?hl=cs">Instagram</a>
+                        <a href="https://x.com/?lang=cs">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ClimbZone. Všechna práva vyhrazena.</p>
+            </div>
+        </footer>
+    </body>
+</html>

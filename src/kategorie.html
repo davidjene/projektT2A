@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategorie - ClimbZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="kategorie-styles.css">
+</head>
+<body>
+    <!-- Hlavička -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="kategorie.html" class="active">Kategorie</a></li>
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="vyhledavani.html" class="icon-link">
+                        <span class="icon">🔍</span>
+                    </a>
+                    <a href="prihlaseni.html" class="icon-link">
+                        <span class="icon">👤</span>
+                    </a>
+                    <a href="oblibene.html" class="icon-link">
+                        <span class="icon">❤️</span>
+                    </a>
+                    <a href="nakupni-kosik.html" class="icon-link cart">
+                        <span class="icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb navigace -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Domů</a>
+            <span class="separator">/</span>
+            <span class="current">Kategorie</span>
+        </div>
+    </div>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <section class="categories-page">
+            <div class="container">
+                <h1 class="page-title">Kategorie produktů</h1>
+                <p class="page-subtitle">Vyberte si kategorii a objevte naši nabídku horolezeckého vybavení</p>
+
+                <div class="categories-grid-large">
+                    <!-- Kategorie 1: Lezecké vybavení -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=lezeni" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/FF6B35/ffffff?text=Lezecké+vybavení" alt="Lezecké vybavení">
+                                <div class="category-overlay">
+                                    <span class="category-count">45+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>🧗 Lezecké vybavení</h2>
+                                <p>Lana, jističe, karabiny, expresky a další technické pomůcky pro bezpečné lezení</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 2: Lezečky a obuv -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=obuv" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/1A936F/ffffff?text=Lezečky+a+obuv" alt="Lezečky a obuv">
+                                <div class="category-overlay">
+                                    <span class="category-count">32+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>👟 Lezečky a obuv</h2>
+                                <p>Sportovní lezečky, bouldrovky, přístupová obuv a horolezecké boty</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 3: Batohy a tašky -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=batohy" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/F77F00/ffffff?text=Batohy" alt="Batohy a tašky">
+                                <div class="category-overlay">
+                                    <span class="category-count">28+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>🎒 Batohy a tašky</h2>
+                                <p>Horolezecké batohy, skialpové batohy, lezecké pytle a transportní vaky</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 4: Oblečení -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=obleceni" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/004E89/ffffff?text=Oblečení" alt="Oblečení">
+                                <div class="category-overlay">
+                                    <span class="category-count">67+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>🧥 Oblečení</h2>
+                                <p>Softshelly, hardshelly, bundy, kalhoty a funkční prádlo pro outdoorové aktivity</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 5: Bezpečnost -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=bezpecnost" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/C1121F/ffffff?text=Bezpečnost" alt="Bezpečnost">
+                                <div class="category-overlay">
+                                    <span class="category-count">38+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>🪖 Bezpečnost</h2>
+                                <p>Helmy, sedáky, lavinové vybavení a další ochranné pomůcky</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 6: Doplňky -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=doplnky" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/540D6E/ffffff?text=Doplňky" alt="Doplňky">
+                                <div class="category-overlay">
+                                    <span class="category-count">52+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>🧰 Doplňky</h2>
+                                <p>Magnézium, chytače, čelovky, termosky a další užitečné doplňky</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 7: Via ferrata -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=via-ferrata" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/2A9D8F/ffffff?text=Via+Ferrata" alt="Via ferrata">
+                                <div class="category-overlay">
+                                    <span class="category-count">18+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>⛓️ Via ferrata</h2>
+                                <p>Kompletní vybavení pro ferraty včetně setů, helem a příslušenství</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Kategorie 8: Skialpinismus -->
+                    <div class="category-tile">
+                        <a href="produkty.html?kategorie=skialp" class="category-link-tile">
+                            <div class="category-image-wrapper">
+                                <img src="https://via.placeholder.com/400x300/264653/ffffff?text=Skialpinismus" alt="Skialpinismus">
+                                <div class="category-overlay">
+                                    <span class="category-count">41+ produktů</span>
+                                </div>
+                            </div>
+                            <div class="category-content">
+                                <h2>⛷️ Skialpinismus</h2>
+                                <p>Pásy, mačky, cepíny a vše pro skialpové túry a zimní horolezectví</p>
+                                <span class="category-btn">Zobrazit produkty</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doporučené kategorie -->
+        <section class="recommended-categories">
+            <div class="container">
+                <h2 class="section-title">Nejoblíbenější kategorie</h2>
+                <div class="small-categories-grid">
+                    <div class="small-category-card">
+                        <a href="#">
+                            <div class="small-icon">🆕</div>
+                            <h3>Novinky</h3>
+                        </a>
+                    </div>
+                    <div class="small-category-card">
+                        <a href="#">
+                            <div class="small-icon">🏷️</div>
+                            <h3>Slevy</h3>
+                        </a>
+                    </div>
+                    <div class="small-category-card">
+                        <a href="#">
+                            <div class="small-icon">⭐</div>
+                            <h3>Bestsellery</h3>
+                        </a>
+                    </div>
+                    <div class="small-category-card">
+                        <a href="#">
+                            <div class="small-icon">📦</div>
+                            <h3>Sety</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>O nás</h4>
+                    <p>Specializujeme se na kvalitní horolezecké a outdoorové vybavení pro lezce všech úrovní.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Zákaznický servis</h4>
+                    <ul>
+                        <li><a href="#">Časté dotazy</a></li>
+                        <li><a href="#">Doprava a platba</a></li>
+                        <li><a href="#">Reklamace</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Důležité odkazy</h4>
+                    <ul>
+                        <li><a href="#">Obchodní podmínky</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sledujte nás</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=cs_CZ">Facebook</a>
+                        <a href="https://www.instagram.com/?hl=cs">Instagram</a>
+                        <a href="https://x.com/?lang=cs">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HoroShop. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přidáno do košíku - ClimbZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pridano-styles.css">
+</head>
+<body>
+    <!-- Hlavička -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="produkty.html">Produkty</a></li>
+                        <li><a href="kategorie.html">Kategorie</a></li>
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="vyhledavani.html" class="icon-link">
+                        <span class="icon">🔍</span>
+                    </a>
+                    <a href="prihlaseni.html" class="icon-link">
+                        <span class="icon">👤</span>
+                    </a>
+                    <a href="oblibene.html" class="icon-link">
+                        <span class="icon">❤️</span>
+                    </a>
+                    <a href="nakupni-kosik.html" class="icon-link cart">
+                        <span class="icon">🛒</span>
+                        <span class="cart-count">1</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <section class="added-to-cart-section">
+            <div class="container">
+                <!-- Úspěšná zpráva -->
+                <div class="success-box">
+                    <div class="success-content">
+                        <div class="success-icon">✓</div>
+                        <div class="success-text">
+                            <h1>Skvělá volba!</h1>
+                            <p class="success-message">Produkt byl úspěšně přidán do košíku</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Obsah - produkt a košík -->
+                <div class="content-grid">
+                    <!-- Levá strana - Přidaný produkt -->
+                    <div class="added-product-section">
+                        <div class="section-header">
+                            <span class="section-icon">📦</span>
+                            <h2>Přidaný produkt</h2>
+                        </div>
+                        <div class="product-detail-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/180x180/FF6B35/ffffff?text=Lano" alt="Dynamické lano">
+                                <span class="in-stock-badge">✓ Skladem</span>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Petzl</div>
+                                <h3>Dynamické lano 60m</h3>
+                                <div class="product-rating">
+                                    ⭐⭐⭐⭐⭐ <span class="rating-text">(24 hodnocení)</span>
+                                </div>
+                                <div class="product-details-grid">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Délka:</span>
+                                        <span class="detail-value">60m</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Barva:</span>
+                                        <span class="detail-value">Oranžová/Bílá</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Množství:</span>
+                                        <span class="detail-value"><strong>1 ks</strong></span>
+                                    </div>
+                                </div>
+                                <div class="product-price-row">
+                                    <span class="price-label">Cena:</span>
+                                    <span class="product-price">3 499 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tlačítka akcí -->
+                        <div class="action-buttons">
+                            <a href="produkty.html" class="btn-continue-shopping">
+                                <span class="btn-icon">←</span>
+                                <span>Pokračovat v nákupu</span>
+                            </a>
+                            <a href="nakupni-kosik.html" class="btn-go-to-cart">
+                                <span>Přejít do košíku</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pravá strana - Souhrn košíku -->
+                    <aside class="cart-summary-sidebar">
+                        <div class="cart-summary-box">
+                            <h3>Váš košík</h3>
+                            
+                            <div class="cart-items-count">
+                                <span class="count-icon">🛒</span>
+                                <span class="count-text">1 položka v košíku</span>
+                            </div>
+
+                            <div class="summary-line">
+                                <span>Produkty:</span>
+                                <span>3 499 Kč</span>
+                            </div>
+
+                            <div class="summary-line">
+                                <span>Doprava:</span>
+                                <span class="shipping-text">Vyberte v košíku</span>
+                            </div>
+
+                            <div class="summary-divider"></div>
+
+                            <div class="summary-total">
+                                <span>Mezisoučet:</span>
+                                <span class="total-price">3 499 Kč</span>
+                            </div>
+
+                            <a href="kosikkrok1.html" class="btn-checkout">
+                                Dokončit objednávku
+                            </a>
+
+                            <div class="free-shipping-notice">
+                                <p>🚚 <strong>Doprava zdarma</strong> při nákupu nad 2 000 Kč</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                                <p class="progress-text">✓ Máte nárok na dopravu zdarma!</p>
+                            </div>
+                        </div>
+
+                        <!-- Bezpečnost -->
+                        <div class="trust-box">
+                            <h4>Bezpečný nákup</h4>
+                            <div class="trust-items">
+                                <div class="trust-item">
+                                    <span class="trust-icon">🔒</span>
+                                    <span>SSL šifrování</span>
+                                </div>
+                                <div class="trust-item">
+                                    <span class="trust-icon">↩️</span>
+                                    <span>14denní vrácení</span>
+                                </div>
+                                <div class="trust-item">
+                                    <span class="trust-icon">✓</span>
+                                    <span>Ověřený e-shop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- Doporučené produkty -->
+                <div class="recommended-section">
+                    <h2>Mohlo by vás také zajímat</h2>
+                    <div class="recommended-products">
+                        <div class="recommended-product-card">
+                            <img src="https://via.placeholder.com/200x200/004E89/ffffff?text=Sedák" alt="Horolezecký sedák">
+                            <div class="product-brand">Black Diamond</div>
+                            <h4>Horolezecký sedák</h4>
+                            <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                            <div class="product-price">2 299 Kč</div>
+                            <button class="btn-add-product">Přidat do košíku</button>
+                        </div>
+
+                        <div class="recommended-product-card">
+                            <img src="https://via.placeholder.com/200x200/1A936F/ffffff?text=Karabina" alt="Karabina HMS">
+                            <div class="product-brand">Mammut</div>
+                            <h4>Karabina HMS</h4>
+                            <div class="product-rating">⭐⭐⭐⭐</div>
+                            <div class="product-price">349 Kč</div>
+                            <button class="btn-add-product">Přidat do košíku</button>
+                        </div>
+
+                        <div class="recommended-product-card">
+                            <img src="https://via.placeholder.com/200x200/C1121F/ffffff?text=Helma" alt="Horolezecká helma">
+                            <div class="product-brand">Petzl</div>
+                            <h4>Horolezecká helma</h4>
+                            <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                            <div class="product-price">1 899 Kč</div>
+                            <button class="btn-add-product">Přidat do košíku</button>
+                        </div>
+
+                        <div class="recommended-product-card">
+                            <img src="https://via.placeholder.com/200x200/540D6E/ffffff?text=Magnézium" alt="Magnézium">
+                            <div class="product-brand">Black Diamond</div>
+                            <h4>Magnézium 300g</h4>
+                            <div class="product-rating">⭐⭐⭐⭐</div>
+                            <div class="product-price">199 Kč</div>
+                            <button class="btn-add-product">Přidat do košíku</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>O nás</h4>
+                    <p>Specializujeme se na kvalitní horolezecké a outdoorové vybavení pro lezce všech úrovní.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Zákaznický servis</h4>
+                    <ul>
+                        <li><a href="#">Časté dotazy</a></li>
+                        <li><a href="#">Doprava a platba</a></li>
+                        <li><a href="#">Reklamace</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Důležité odkazy</h4>
+                    <ul>
+                        <li><a href="#">Obchodní podmínky</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sledujte nás</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=cs_CZ">Facebook</a>
+                        <a href="https://www.instagram.com/?hl=cs">Instagram</a>
+                        <a href="https://x.com/?lang=cs">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ClimbZone. Všechna práva vyhrazena.</p>
+            </div>
+        </footer>
+    </body>
+</html>
