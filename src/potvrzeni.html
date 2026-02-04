@@ -1,335 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Potvrzení objednávky - ClimbZone</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="potvrzeni-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="potvrzeni-styles.css" />
+  </head>
+  <body>
     <!-- Hlavička -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
-                </div>
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Domů</a></li>
-                        <li><a href="kategorie.html">Kategorie</a></li>
-                        <li><a href="o-nas.html">O nás</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <div class="header-icons">
-                    <a href="vyhledavani.html" class="icon-link">
-                        <span class="icon">🔍</span>
-                    </a>
-                    <a href="prihlaseni.html" class="icon-link">
-                        <span class="icon">👤</span>
-                    </a>
-                    <a href="oblibene.html" class="icon-link">
-                        <span class="icon">❤️</span>
-                    </a>
-                    <a href="nakupni-kosik.html" class="icon-link cart">
-                        <span class="icon">🛒</span>
-                        <span class="cart-count">0</span>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
+          </div>
+          <nav>
+            <ul class="nav-menu">
+              <li><a href="index.html">Domů</a></li>
+              <li><a href="kategorie.html">Kategorie</a></li>
+              <li><a href="o-nas.html">O nás</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="header-icons">
+            <a href="vyhledavani.html" class="icon-link">
+              <span class="icon">🔍</span>
+            </a>
+            <a href="prihlaseni.html" class="icon-link">
+              <span class="icon">👤</span>
+            </a>
+            <a href="oblibene.html" class="icon-link">
+              <span class="icon">❤️</span>
+            </a>
+            <a href="nakupni-kosik.html" class="icon-link cart">
+              <span class="icon">🛒</span>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Hlavní obsah -->
     <main>
-        <section class="confirmation-section">
-            <div class="container">
-                <!-- Úspěšná zpráva -->
-                <div class="success-banner">
-                    <div class="success-icon">✓</div>
-                    <h1>Objednávka byla úspěšně odeslána!</h1>
-                    <p class="success-message">Děkujeme za Váš nákup. Na e-mail <strong>jan.novak@email.cz</strong> jsme Vám odeslali potvrzení objednávky.</p>
-                </div>
+      <section class="confirmation-section">
+        <div class="container">
+          <!-- Úspěšná zpráva -->
+          <div class="success-banner">
+            <div class="success-icon">✓</div>
+            <h1>Objednávka byla úspěšně odeslána!</h1>
+            <p class="success-message">
+              Děkujeme za Váš nákup. Na e-mail
+              <strong>jan.novak@email.cz</strong> jsme Vám odeslali potvrzení
+              objednávky.
+            </p>
+          </div>
 
-                <!-- Informace o objednávce -->
-                <div class="order-info-grid">
-                    <div class="order-info-card">
-                        <div class="info-card-header">
-                            <span class="info-icon">📦</span>
-                            <h3>Číslo objednávky</h3>
-                        </div>
-                        <div class="info-card-value">#2024-001234</div>
-                    </div>
-
-                    <div class="order-info-card">
-                        <div class="info-card-header">
-                            <span class="info-icon">📅</span>
-                            <h3>Datum objednávky</h3>
-                        </div>
-                        <div class="info-card-value">2. února 2025</div>
-                    </div>
-
-                    <div class="order-info-card">
-                        <div class="info-card-header">
-                            <span class="info-icon">💰</span>
-                            <h3>Celková cena</h3>
-                        </div>
-                        <div class="info-card-value price">6 645 Kč</div>
-                    </div>
-
-                    <div class="order-info-card">
-                        <div class="info-card-header">
-                            <span class="info-icon">🚚</span>
-                            <h3>Předpokládané doručení</h3>
-                        </div>
-                        <div class="info-card-value">5. - 6. února 2025</div>
-                    </div>
-                </div>
-
-                <!-- Shrnutí objednávky -->
-                <div class="order-summary-section">
-                    <h2>Shrnutí objednávky</h2>
-
-                    <div class="summary-grid">
-                        <!-- Levá strana - Produkty a informace -->
-                        <div class="summary-main">
-                            <!-- Objednané produkty -->
-                            <div class="summary-box">
-                                <h3>📋 Objednané produkty</h3>
-                                <div class="ordered-products">
-                                    <div class="ordered-product">
-                                        <img src="https://via.placeholder.com/100x100/FF6B35/ffffff?text=Lano" alt="Dynamické lano">
-                                        <div class="product-details">
-                                            <h4>Dynamické lano 60m</h4>
-                                            <p class="product-variant">Petzl | Délka: 60m | Barva: Oranžová/Bílá</p>
-                                            <p class="product-quantity">Množství: 1 ks</p>
-                                        </div>
-                                        <div class="product-price">3 499 Kč</div>
-                                    </div>
-
-                                    <div class="ordered-product">
-                                        <img src="https://via.placeholder.com/100x100/004E89/ffffff?text=Sedák" alt="Horolezecký sedák">
-                                        <div class="product-details">
-                                            <h4>Horolezecký sedák</h4>
-                                            <p class="product-variant">Black Diamond | Velikost: L</p>
-                                            <p class="product-quantity">Množství: 1 ks</p>
-                                        </div>
-                                        <div class="product-price">2 299 Kč</div>
-                                    </div>
-
-                                    <div class="ordered-product">
-                                        <img src="https://via.placeholder.com/100x100/1A936F/ffffff?text=Karabina" alt="Karabina HMS">
-                                        <div class="product-details">
-                                            <h4>Karabina HMS</h4>
-                                            <p class="product-variant">Mammut</p>
-                                            <p class="product-quantity">Množství: 2 ks</p>
-                                        </div>
-                                        <div class="product-price">698 Kč</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Dodací adresa -->
-                            <div class="summary-box">
-                                <h3>📍 Dodací adresa</h3>
-                                <div class="address-content">
-                                    <p><strong>Jan Novák</strong></p>
-                                    <p>Hlavní 123</p>
-                                    <p>110 00 Praha</p>
-                                    <p>Česká republika</p>
-                                    <p class="contact-info">
-                                        <span>📧 jan.novak@email.cz</span><br>
-                                        <span>📞 +420 123 456 789</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Doprava a platba -->
-                            <div class="summary-box">
-                                <h3>🚚 Doprava a platba</h3>
-                                <div class="delivery-content">
-                                    <div class="delivery-item">
-                                        <span class="delivery-label">Způsob dopravy:</span>
-                                        <span class="delivery-value">PPL na adresu</span>
-                                    </div>
-                                    <div class="delivery-item">
-                                        <span class="delivery-label">Způsob platby:</span>
-                                        <span class="delivery-value">Platební karta online</span>
-                                    </div>
-                                    <div class="delivery-item">
-                                        <span class="delivery-label">Stav platby:</span>
-                                        <span class="delivery-value status-paid">✓ Zaplaceno</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pravá strana - Cenové shrnutí -->
-                        <aside class="summary-sidebar">
-                            <div class="price-summary">
-                                <h3>💰 Cenové shrnutí</h3>
-                                
-                                <div class="price-line">
-                                    <span>Produkty (3 ks):</span>
-                                    <span>6 496 Kč</span>
-                                </div>
-
-                                <div class="price-line">
-                                    <span>Doprava (PPL):</span>
-                                    <span>149 Kč</span>
-                                </div>
-
-                                <div class="price-line">
-                                    <span>Platba (Karta):</span>
-                                    <span class="free">Zdarma</span>
-                                </div>
-
-                                <div class="price-divider"></div>
-
-                                <div class="price-total">
-                                    <span>Celkem:</span>
-                                    <span>6 645 Kč</span>
-                                </div>
-
-                                <div class="price-vat">
-                                    <span>Z toho DPH (21%):</span>
-                                    <span>1 155 Kč</span>
-                                </div>
-                            </div>
-
-                            <!-- Další kroky -->
-                            <div class="next-steps">
-                                <h4>Co bude dál?</h4>
-                                <div class="step-item">
-                                    <span class="step-number">1</span>
-                                    <div class="step-text">
-                                        <strong>Potvrzení e-mailem</strong>
-                                        <p>Okamžitě jste obdrželi potvrzení</p>
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <span class="step-number">2</span>
-                                    <div class="step-text">
-                                        <strong>Balíme zboží</strong>
-                                        <p>Do 24 hodin připravíme zásilku</p>
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <span class="step-number">3</span>
-                                    <div class="step-text">
-                                        <strong>Odeslání</strong>
-                                        <p>Obdržíte sledovací číslo</p>
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <span class="step-number">4</span>
-                                    <div class="step-text">
-                                        <strong>Doručení</strong>
-                                        <p>Za 2-3 pracovní dny</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Kontakt -->
-                            <div class="help-contact">
-                                <h4>Potřebujete pomoc?</h4>
-                                <p>Jsme tu pro vás každý pracovní den.</p>
-                                <div class="contact-methods">
-                                    <a href="tel:+420123456789" class="contact-link">
-                                        <span>📞</span> +420 123 456 789
-                                    </a>
-                                    <a href="mailto:info@horoshop.cz" class="contact-link">
-                                        <span>✉️</span> info@horoshop.cz
-                                    </a>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-
-                <!-- Akční tlačítka -->
-                <div class="action-buttons-section">
-                    <a href="index.html" class="btn-primary-action">Pokračovat v nákupu</a>
-                    <a href="#" class="btn-secondary-action">Vytisknout objednávku</a>
-                </div>
-
-                <!-- Doporučené produkty -->
-                <div class="recommended-section">
-                    <h2>Mohlo by vás zajímat</h2>
-                    <div class="recommended-products">
-                        <div class="recommended-product">
-                            <img src="https://via.placeholder.com/200x200/C1121F/ffffff?text=Helma" alt="Helma">
-                            <h4>Horolezecká helma</h4>
-                            <p class="rec-price">1 899 Kč</p>
-                            <a href="detail.html" class="btn-rec">Zobrazit</a>
-                        </div>
-
-                        <div class="recommended-product">
-                            <img src="https://via.placeholder.com/200x200/540D6E/ffffff?text=Magnézium" alt="Magnézium">
-                            <h4>Magnézium 300g</h4>
-                            <p class="rec-price">199 Kč</p>
-                            <a href="detail.html" class="btn-rec">Zobrazit</a>
-                        </div>
-
-                        <div class="recommended-product">
-                            <img src="https://via.placeholder.com/200x200/F77F00/ffffff?text=Batoh" alt="Batoh">
-                            <h4>Alpinistický batoh 45L</h4>
-                            <p class="rec-price">4 299 Kč</p>
-                            <a href="detail.html" class="btn-rec">Zobrazit</a>
-                        </div>
-
-                        <div class="recommended-product">
-                            <img src="https://via.placeholder.com/200x200/2A9D8F/ffffff?text=Čelovka" alt="Čelovka">
-                            <h4>LED čelovka</h4>
-                            <p class="rec-price">899 Kč</p>
-                            <a href="detail.html" class="btn-rec">Zobrazit</a>
-                        </div>
-                    </div>
-                </div>
+          <!-- Informace o objednávce -->
+          <div class="order-info-grid">
+            <div class="order-info-card">
+              <div class="info-card-header">
+                <span class="info-icon">📦</span>
+                <h3>Číslo objednávky</h3>
+              </div>
+              <div class="info-card-value">#2024-001234</div>
             </div>
-        </section>
+
+            <div class="order-info-card">
+              <div class="info-card-header">
+                <span class="info-icon">📅</span>
+                <h3>Datum objednávky</h3>
+              </div>
+              <div class="info-card-value">2. února 2025</div>
+            </div>
+
+            <div class="order-info-card">
+              <div class="info-card-header">
+                <span class="info-icon">💰</span>
+                <h3>Celková cena</h3>
+              </div>
+              <div class="info-card-value price">6 645 Kč</div>
+            </div>
+
+            <div class="order-info-card">
+              <div class="info-card-header">
+                <span class="info-icon">🚚</span>
+                <h3>Předpokládané doručení</h3>
+              </div>
+              <div class="info-card-value">5. - 6. února 2025</div>
+            </div>
+          </div>
+
+          <!-- Shrnutí objednávky -->
+          <div class="order-summary-section">
+            <h2>Shrnutí objednávky</h2>
+
+            <div class="summary-grid">
+              <!-- Levá strana - Produkty a informace -->
+              <div class="summary-main">
+                <!-- Objednané produkty -->
+                <div class="summary-box">
+                  <h3>📋 Objednané produkty</h3>
+                  <div class="ordered-products">
+                    <div class="ordered-product">
+                      <img
+                        src="https://via.placeholder.com/100x100/FF6B35/ffffff?text=Lano"
+                        alt="Dynamické lano"
+                      />
+                      <div class="product-details">
+                        <h4>Dynamické lano 60m</h4>
+                        <p class="product-variant">
+                          Petzl | Délka: 60m | Barva: Oranžová/Bílá
+                        </p>
+                        <p class="product-quantity">Množství: 1 ks</p>
+                      </div>
+                      <div class="product-price">3 499 Kč</div>
+                    </div>
+
+                    <div class="ordered-product">
+                      <img
+                        src="https://via.placeholder.com/100x100/004E89/ffffff?text=Sedák"
+                        alt="Horolezecký sedák"
+                      />
+                      <div class="product-details">
+                        <h4>Horolezecký sedák</h4>
+                        <p class="product-variant">
+                          Black Diamond | Velikost: L
+                        </p>
+                        <p class="product-quantity">Množství: 1 ks</p>
+                      </div>
+                      <div class="product-price">2 299 Kč</div>
+                    </div>
+
+                    <div class="ordered-product">
+                      <img
+                        src="https://via.placeholder.com/100x100/1A936F/ffffff?text=Karabina"
+                        alt="Karabina HMS"
+                      />
+                      <div class="product-details">
+                        <h4>Karabina HMS</h4>
+                        <p class="product-variant">Mammut</p>
+                        <p class="product-quantity">Množství: 2 ks</p>
+                      </div>
+                      <div class="product-price">698 Kč</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dodací adresa -->
+                <div class="summary-box">
+                  <h3>📍 Dodací adresa</h3>
+                  <div class="address-content">
+                    <p><strong>Jan Novák</strong></p>
+                    <p>Hlavní 123</p>
+                    <p>110 00 Praha</p>
+                    <p>Česká republika</p>
+                    <p class="contact-info">
+                      <span>📧 jan.novak@email.cz</span><br />
+                      <span>📞 +420 123 456 789</span>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Doprava a platba -->
+                <div class="summary-box">
+                  <h3>🚚 Doprava a platba</h3>
+                  <div class="delivery-content">
+                    <div class="delivery-item">
+                      <span class="delivery-label">Způsob dopravy:</span>
+                      <span class="delivery-value">PPL na adresu</span>
+                    </div>
+                    <div class="delivery-item">
+                      <span class="delivery-label">Způsob platby:</span>
+                      <span class="delivery-value">Platební karta online</span>
+                    </div>
+                    <div class="delivery-item">
+                      <span class="delivery-label">Stav platby:</span>
+                      <span class="delivery-value status-paid"
+                        >✓ Zaplaceno</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pravá strana - Cenové shrnutí -->
+              <aside class="summary-sidebar">
+                <div class="price-summary">
+                  <h3>💰 Cenové shrnutí</h3>
+
+                  <div class="price-line">
+                    <span>Produkty (3 ks):</span>
+                    <span>6 496 Kč</span>
+                  </div>
+
+                  <div class="price-line">
+                    <span>Doprava (PPL):</span>
+                    <span>149 Kč</span>
+                  </div>
+
+                  <div class="price-line">
+                    <span>Platba (Karta):</span>
+                    <span class="free">Zdarma</span>
+                  </div>
+
+                  <div class="price-divider"></div>
+
+                  <div class="price-total">
+                    <span>Celkem:</span>
+                    <span>6 645 Kč</span>
+                  </div>
+
+                  <div class="price-vat">
+                    <span>Z toho DPH (21%):</span>
+                    <span>1 155 Kč</span>
+                  </div>
+                </div>
+
+                <!-- Další kroky -->
+                <div class="next-steps">
+                  <h4>Co bude dál?</h4>
+                  <div class="step-item">
+                    <span class="step-number">1</span>
+                    <div class="step-text">
+                      <strong>Potvrzení e-mailem</strong>
+                      <p>Okamžitě jste obdrželi potvrzení</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <span class="step-number">2</span>
+                    <div class="step-text">
+                      <strong>Balíme zboží</strong>
+                      <p>Do 24 hodin připravíme zásilku</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <span class="step-number">3</span>
+                    <div class="step-text">
+                      <strong>Odeslání</strong>
+                      <p>Obdržíte sledovací číslo</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <span class="step-number">4</span>
+                    <div class="step-text">
+                      <strong>Doručení</strong>
+                      <p>Za 2-3 pracovní dny</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Kontakt -->
+                <div class="help-contact">
+                  <h4>Potřebujete pomoc?</h4>
+                  <p>Jsme tu pro vás každý pracovní den.</p>
+                  <div class="contact-methods">
+                    <a href="tel:+420123456789" class="contact-link">
+                      <span>📞</span> +420 123 456 789
+                    </a>
+                    <a href="mailto:info@horoshop.cz" class="contact-link">
+                      <span>✉️</span> info@horoshop.cz
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+
+          <!-- Akční tlačítka -->
+          <div class="action-buttons-section">
+            <a href="index.html" class="btn-primary-action"
+              >Pokračovat v nákupu</a
+            >
+            <a href="#" class="btn-secondary-action">Vytisknout objednávku</a>
+          </div>
+
+          <!-- Doporučené produkty -->
+          <div class="recommended-section">
+            <h2>Mohlo by vás zajímat</h2>
+            <div class="recommended-products">
+              <div class="recommended-product">
+                <img
+                  src="https://via.placeholder.com/200x200/C1121F/ffffff?text=Helma"
+                  alt="Helma"
+                />
+                <h4>Horolezecká helma</h4>
+                <p class="rec-price">1 899 Kč</p>
+                <a href="detail.html" class="btn-rec">Zobrazit</a>
+              </div>
+
+              <div class="recommended-product">
+                <img
+                  src="https://via.placeholder.com/200x200/540D6E/ffffff?text=Magnézium"
+                  alt="Magnézium"
+                />
+                <h4>Magnézium 300g</h4>
+                <p class="rec-price">199 Kč</p>
+                <a href="detail.html" class="btn-rec">Zobrazit</a>
+              </div>
+
+              <div class="recommended-product">
+                <img
+                  src="https://via.placeholder.com/200x200/F77F00/ffffff?text=Batoh"
+                  alt="Batoh"
+                />
+                <h4>Alpinistický batoh 45L</h4>
+                <p class="rec-price">4 299 Kč</p>
+                <a href="detail.html" class="btn-rec">Zobrazit</a>
+              </div>
+
+              <div class="recommended-product">
+                <img
+                  src="https://via.placeholder.com/200x200/2A9D8F/ffffff?text=Čelovka"
+                  alt="Čelovka"
+                />
+                <h4>LED čelovka</h4>
+                <p class="rec-price">899 Kč</p>
+                <a href="detail.html" class="btn-rec">Zobrazit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Patička -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>O nás</h4>
-                    <p>Specializujeme se na kvalitní horolezecké a outdoorové vybavení pro lezce všech úrovní.</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Zákaznický servis</h4>
-                    <ul>
-                        <li><a href="#">Časté dotazy</a></li>
-                        <li><a href="#">Doprava a platba</a></li>
-                        <li><a href="#">Reklamace</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Důležité odkazy</h4>
-                    <ul>
-                        <li><a href="#">Obchodní podmínky</a></li>
-                        <li><a href="#">Ochrana osobních údajů</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Sledujte nás</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/?locale=cs_CZ">Facebook</a>
-                        <a href="https://www.instagram.com/?hl=cs">Instagram</a>
-                        <a href="https://x.com/?lang=cs">Twitter</a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>O nás</h4>
+            <p>
+              Specializujeme se na kvalitní horolezecké a outdoorové vybavení
+              pro lezce všech úrovní.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Zákaznický servis</h4>
+            <ul>
+              <li><a href="#">Časté dotazy</a></li>
+              <li><a href="#">Doprava a platba</a></li>
+              <li><a href="#">Reklamace</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Důležité odkazy</h4>
+            <ul>
+              <li><a href="#">Obchodní podmínky</a></li>
+              <li><a href="#">Ochrana osobních údajů</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Sledujte nás</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/?locale=cs_CZ">Facebook</a>
+              <a href="https://www.instagram.com/?hl=cs">Instagram</a>
+              <a href="https://x.com/?lang=cs">Twitter</a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 ClimbZone. Všechna práva vyhrazena.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 ClimbZone. Všechna práva vyhrazena.</p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

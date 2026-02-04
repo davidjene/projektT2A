@@ -1,182 +1,176 @@
 /* Styly pro výsledky vyhledávání */
 
 .search-results-section {
-    padding: 2rem 0 4rem;
+  padding: 2rem 0 4rem;
 }
 
 /* VYHLEDÁVACÍ LIŠTA */
 .search-bar-section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .search-form {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    gap: 1rem;
-    background: white;
-    padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .search-input {
-    flex: 1;
-    padding: 1rem;
-    border: 2px solid #dee2e6;
-    border-radius: 10px;
-    font-size: 1.05rem;
-    transition: border-color 0.3s;
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  transition: border-color 0.3s;
 }
 
 .search-input:focus {
-    outline: none;
-    border-color: #1e3c72;
+  outline: none;
+  border-color: #1e3c72;
 }
 
 .search-button {
-    padding: 1rem 2rem;
-    background: #1e3c72;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s;
+  padding: 1rem 2rem;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
 }
 
 .search-button:hover {
-    background: #2a5298;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+  background: #2a5298;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
 }
 
 .search-icon {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* VÝSLEDKY VYHLEDÁVÁNÍ HEADER */
 .search-results-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
 }
 
 .results-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .search-query {
-    color: #1e3c72;
-    font-weight: bold;
+  color: #1e3c72;
+  font-weight: bold;
 }
 
 .results-count {
-    font-size: 1.1rem;
-    color: #6c757d;
+  font-size: 1.1rem;
+  color: #6c757d;
 }
 
 /* ŽÁDNÉ DALŠÍ VÝSLEDKY */
 .no-more-results {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-    background: #f8f9fa;
-    border-radius: 12px;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
 }
 
 .no-more-results p {
-    color: #6c757d;
-    font-size: 1rem;
+  color: #6c757d;
+  font-size: 1rem;
 }
 
 /* SOUVISEJÍCÍ HLEDÁNÍ */
 .related-searches {
-    margin-top: 3rem;
-    padding: 2rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
 }
 
 .related-searches h3 {
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
 .search-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .search-tag {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background: #f8f9fa;
-    color: #1e3c72;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    border: 2px solid transparent;
-    transition: all 0.3s;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #f8f9fa;
+  color: #1e3c72;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.3s;
 }
 
 .search-tag:hover {
-    background: #1e3c72;
-    color: white;
-    border-color: #1e3c72;
-    transform: translateY(-2px);
+  background: #1e3c72;
+  color: white;
+  border-color: #1e3c72;
+  transform: translateY(-2px);
 }
 
 /* RESPONZIVNÍ DESIGN */
 @media (max-width: 768px) {
-    .search-form {
-        flex-direction: column;
-    }
+  .search-form {
+    flex-direction: column;
+  }
 
-    .search-button {
-        width: 100%;
-        justify-content: center;
-    }
+  .search-button {
+    width: 100%;
+    justify-content: center;
+  }
 
-    .results-title {
-        font-size: 1.6rem;
-    }
+  .results-title {
+    font-size: 1.6rem;
+  }
 
-    .search-tags {
-        gap: 0.8rem;
-    }
+  .search-tags {
+    gap: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .results-title {
-        font-size: 1.4rem;
-    }
+  .results-title {
+    font-size: 1.4rem;
+  }
 
-    .related-searches h3 {
-        font-size: 1.1rem;
-    }
+  .related-searches h3 {
+    font-size: 1.1rem;
+  }
 }
-
-
-
 
 /* zruseni podtrzeni napisu/logo */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
-

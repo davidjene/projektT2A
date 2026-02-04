@@ -1,270 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oblíbené produkty - ClimbZone</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="oblibene-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="oblibene-styles.css" />
+  </head>
+  <body>
     <!-- Hlavička -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
-                </div>
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Domů</a></li>
-                        <li><a href="produkty.html">Produkty</a></li>
-                        <li><a href="kategorie.html">Kategorie</a></li>
-                        <li><a href="o-nas.html">O nás</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <div class="header-icons">
-                    <a href="vyhledavani.html" class="icon-link">
-                        <span class="icon">🔍</span>
-                    </a>
-                    <a href="prihlaseni.html" class="icon-link">
-                        <span class="icon">👤</span>
-                    </a>
-                    <a href="oblibene.html" class="icon-link">
-                        <span class="icon">❤️</span>
-                    </a>
-                    <a href="nakupni-kosik.html" class="icon-link cart">
-                        <span class="icon">🛒</span>
-                        <span class="cart-count">0</span>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html"><h1>⛰️ ClimbZone</h1></a>
+          </div>
+          <nav>
+            <ul class="nav-menu">
+              <li><a href="index.html">Domů</a></li>
+              <li><a href="produkty.html">Produkty</a></li>
+              <li><a href="kategorie.html">Kategorie</a></li>
+              <li><a href="o-nas.html">O nás</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="header-icons">
+            <a href="vyhledavani.html" class="icon-link">
+              <span class="icon">🔍</span>
+            </a>
+            <a href="prihlaseni.html" class="icon-link">
+              <span class="icon">👤</span>
+            </a>
+            <a href="oblibene.html" class="icon-link">
+              <span class="icon">❤️</span>
+            </a>
+            <a href="nakupni-kosik.html" class="icon-link cart">
+              <span class="icon">🛒</span>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
-        <div class="container">
-            <a href="index.html">Domů</a>
-            <span class="separator">/</span>
-            <span class="current">Oblíbené produkty</span>
-        </div>
+      <div class="container">
+        <a href="index.html">Domů</a>
+        <span class="separator">/</span>
+        <span class="current">Oblíbené produkty</span>
+      </div>
     </div>
 
     <!-- Hlavní obsah -->
     <main>
-        <section class="wishlist-section">
-            <div class="container">
-                <div class="wishlist-header">
-                    <div class="header-content-left">
-                        <h1>❤️ Oblíbené produkty</h1>
-                        <p class="wishlist-count">Máte uloženo 5 produktů</p>
-                    </div>
-                    <div class="header-actions">
-                        <button class="btn-share">Sdílet seznam</button>
-                        <button class="btn-clear-all">Vymazat vše</button>
-                    </div>
+      <section class="wishlist-section">
+        <div class="container">
+          <div class="wishlist-header">
+            <div class="header-content-left">
+              <h1>❤️ Oblíbené produkty</h1>
+              <p class="wishlist-count">Máte uloženo 5 produktů</p>
+            </div>
+            <div class="header-actions">
+              <button class="btn-share">Sdílet seznam</button>
+              <button class="btn-clear-all">Vymazat vše</button>
+            </div>
+          </div>
+
+          <!-- Grid oblíbených produktů -->
+          <div class="wishlist-grid">
+            <!-- Produkt 1 -->
+            <div class="wishlist-item">
+              <button class="btn-remove-wishlist">❤️</button>
+              <div class="item-badge sale">-13%</div>
+              <a href="detail.html" class="item-link">
+                <div class="item-image">
+                  <img
+                    src="https://via.placeholder.com/300x300/FF6B35/ffffff?text=Lano"
+                    alt="Dynamické lano"
+                  />
                 </div>
-
-                <!-- Grid oblíbených produktů -->
-                <div class="wishlist-grid">
-                    <!-- Produkt 1 -->
-                    <div class="wishlist-item">
-                        <button class="btn-remove-wishlist">❤️</button>
-                        <div class="item-badge sale">-13%</div>
-                        <a href="detail.html" class="item-link">
-                            <div class="item-image">
-                                <img src="https://via.placeholder.com/300x300/FF6B35/ffffff?text=Lano" alt="Dynamické lano">
-                            </div>
-                            <div class="item-info">
-                                <div class="item-brand">Petzl</div>
-                                <h3>Dynamické lano 60m</h3>
-                                <p class="item-description">Profesionální lano s certifikací UIAA</p>
-                                <div class="item-rating">
-                                    ⭐⭐⭐⭐⭐ <span class="rating-count">(24)</span>
-                                </div>
-                                <div class="item-stock in-stock">✓ Skladem</div>
-                                <div class="item-price-row">
-                                    <span class="item-price">3 499 Kč</span>
-                                    <span class="item-price-old">3 999 Kč</span>
-                                </div>
-                            </div>
-                        </a>
-                        <button class="btn-add-to-cart">Přidat do košíku</button>
-                    </div>
-
-                    <!-- Produkt 2 -->
-                    <div class="wishlist-item">
-                        <button class="btn-remove-wishlist">❤️</button>
-                        <a href="detail.html" class="item-link">
-                            <div class="item-image">
-                                <img src="https://via.placeholder.com/300x300/004E89/ffffff?text=Sedák" alt="Horolezecký sedák">
-                            </div>
-                            <div class="item-info">
-                                <div class="item-brand">Black Diamond</div>
-                                <h3>Horolezecký sedák</h3>
-                                <p class="item-description">Pohodlný a bezpečný sedák pro lezení</p>
-                                <div class="item-rating">
-                                    ⭐⭐⭐⭐⭐ <span class="rating-count">(18)</span>
-                                </div>
-                                <div class="item-stock in-stock">✓ Skladem</div>
-                                <div class="item-price-row">
-                                    <span class="item-price">2 299 Kč</span>
-                                </div>
-                            </div>
-                        </a>
-                        <button class="btn-add-to-cart">Přidat do košíku</button>
-                    </div>
-
-                    <!-- Produkt 3 -->
-                    <div class="wishlist-item">
-                        <button class="btn-remove-wishlist">❤️</button>
-                        <div class="item-badge new">Novinka</div>
-                        <a href="detail.html" class="item-link">
-                            <div class="item-image">
-                                <img src="https://via.placeholder.com/300x300/C1121F/ffffff?text=Helma" alt="Horolezecká helma">
-                            </div>
-                            <div class="item-info">
-                                <div class="item-brand">Petzl</div>
-                                <h3>Horolezecká helma</h3>
-                                <p class="item-description">Lehká a odolná helma pro maximální ochranu</p>
-                                <div class="item-rating">
-                                    ⭐⭐⭐⭐⭐ <span class="rating-count">(32)</span>
-                                </div>
-                                <div class="item-stock in-stock">✓ Skladem</div>
-                                <div class="item-price-row">
-                                    <span class="item-price">1 899 Kč</span>
-                                </div>
-                            </div>
-                        </a>
-                        <button class="btn-add-to-cart">Přidat do košíku</button>
-                    </div>
-
-                    <!-- Produkt 4 -->
-                    <div class="wishlist-item">
-                        <button class="btn-remove-wishlist">❤️</button>
-                        <a href="detail.html" class="item-link">
-                            <div class="item-image">
-                                <img src="https://via.placeholder.com/300x300/F77F00/ffffff?text=Batoh" alt="Alpinistický batoh">
-                            </div>
-                            <div class="item-info">
-                                <div class="item-brand">Mammut</div>
-                                <h3>Alpinistický batoh 45L</h3>
-                                <p class="item-description">Prostorný batoh pro náročné výpravy</p>
-                                <div class="item-rating">
-                                    ⭐⭐⭐⭐ <span class="rating-count">(15)</span>
-                                </div>
-                                <div class="item-stock low-stock">⚠️ Poslední kusy</div>
-                                <div class="item-price-row">
-                                    <span class="item-price">4 299 Kč</span>
-                                </div>
-                            </div>
-                        </a>
-                        <button class="btn-add-to-cart">Přidat do košíku</button>
-                    </div>
-
-                    <!-- Produkt 5 -->
-                    <div class="wishlist-item">
-                        <button class="btn-remove-wishlist">❤️</button>
-                        <div class="item-badge sale">-20%</div>
-                        <a href="detail.html" class="item-link">
-                            <div class="item-image">
-                                <img src="https://via.placeholder.com/300x300/1A936F/ffffff?text=Boty" alt="Lezecké boty">
-                            </div>
-                            <div class="item-info">
-                                <div class="item-brand">La Sportiva</div>
-                                <h3>Lezečky Solution Comp</h3>
-                                <p class="item-description">Vysoce výkonné boty pro pokročilé lezce</p>
-                                <div class="item-rating">
-                                    ⭐⭐⭐⭐⭐ <span class="rating-count">(41)</span>
-                                </div>
-                                <div class="item-stock in-stock">✓ Skladem</div>
-                                <div class="item-price-row">
-                                    <span class="item-price">3 999 Kč</span>
-                                    <span class="item-price-old">4 999 Kč</span>
-                                </div>
-                            </div>
-                        </a>
-                        <button class="btn-add-to-cart">Přidat do košíku</button>
-                    </div>
+                <div class="item-info">
+                  <div class="item-brand">Petzl</div>
+                  <h3>Dynamické lano 60m</h3>
+                  <p class="item-description">
+                    Profesionální lano s certifikací UIAA
+                  </p>
+                  <div class="item-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-count">(24)</span>
+                  </div>
+                  <div class="item-stock in-stock">✓ Skladem</div>
+                  <div class="item-price-row">
+                    <span class="item-price">3 499 Kč</span>
+                    <span class="item-price-old">3 999 Kč</span>
+                  </div>
                 </div>
+              </a>
+              <button class="btn-add-to-cart">Přidat do košíku</button>
+            </div>
 
-                <!-- Přidat všechny do košíku -->
-                <div class="bulk-actions">
-                    <button class="btn-add-all-to-cart">
-                        Přidat všechny do košíku (5 produktů)
-                    </button>
+            <!-- Produkt 2 -->
+            <div class="wishlist-item">
+              <button class="btn-remove-wishlist">❤️</button>
+              <a href="detail.html" class="item-link">
+                <div class="item-image">
+                  <img
+                    src="https://via.placeholder.com/300x300/004E89/ffffff?text=Sedák"
+                    alt="Horolezecký sedák"
+                  />
                 </div>
+                <div class="item-info">
+                  <div class="item-brand">Black Diamond</div>
+                  <h3>Horolezecký sedák</h3>
+                  <p class="item-description">
+                    Pohodlný a bezpečný sedák pro lezení
+                  </p>
+                  <div class="item-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-count">(18)</span>
+                  </div>
+                  <div class="item-stock in-stock">✓ Skladem</div>
+                  <div class="item-price-row">
+                    <span class="item-price">2 299 Kč</span>
+                  </div>
+                </div>
+              </a>
+              <button class="btn-add-to-cart">Přidat do košíku</button>
+            </div>
 
-                <!-- Prázdný wishlist (skrytý, jen pro ukázku) -->
-                <!-- <div class="empty-wishlist">
+            <!-- Produkt 3 -->
+            <div class="wishlist-item">
+              <button class="btn-remove-wishlist">❤️</button>
+              <div class="item-badge new">Novinka</div>
+              <a href="detail.html" class="item-link">
+                <div class="item-image">
+                  <img
+                    src="https://via.placeholder.com/300x300/C1121F/ffffff?text=Helma"
+                    alt="Horolezecká helma"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-brand">Petzl</div>
+                  <h3>Horolezecká helma</h3>
+                  <p class="item-description">
+                    Lehká a odolná helma pro maximální ochranu
+                  </p>
+                  <div class="item-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-count">(32)</span>
+                  </div>
+                  <div class="item-stock in-stock">✓ Skladem</div>
+                  <div class="item-price-row">
+                    <span class="item-price">1 899 Kč</span>
+                  </div>
+                </div>
+              </a>
+              <button class="btn-add-to-cart">Přidat do košíku</button>
+            </div>
+
+            <!-- Produkt 4 -->
+            <div class="wishlist-item">
+              <button class="btn-remove-wishlist">❤️</button>
+              <a href="detail.html" class="item-link">
+                <div class="item-image">
+                  <img
+                    src="https://via.placeholder.com/300x300/F77F00/ffffff?text=Batoh"
+                    alt="Alpinistický batoh"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-brand">Mammut</div>
+                  <h3>Alpinistický batoh 45L</h3>
+                  <p class="item-description">
+                    Prostorný batoh pro náročné výpravy
+                  </p>
+                  <div class="item-rating">
+                    ⭐⭐⭐⭐ <span class="rating-count">(15)</span>
+                  </div>
+                  <div class="item-stock low-stock">⚠️ Poslední kusy</div>
+                  <div class="item-price-row">
+                    <span class="item-price">4 299 Kč</span>
+                  </div>
+                </div>
+              </a>
+              <button class="btn-add-to-cart">Přidat do košíku</button>
+            </div>
+
+            <!-- Produkt 5 -->
+            <div class="wishlist-item">
+              <button class="btn-remove-wishlist">❤️</button>
+              <div class="item-badge sale">-20%</div>
+              <a href="detail.html" class="item-link">
+                <div class="item-image">
+                  <img
+                    src="https://via.placeholder.com/300x300/1A936F/ffffff?text=Boty"
+                    alt="Lezecké boty"
+                  />
+                </div>
+                <div class="item-info">
+                  <div class="item-brand">La Sportiva</div>
+                  <h3>Lezečky Solution Comp</h3>
+                  <p class="item-description">
+                    Vysoce výkonné boty pro pokročilé lezce
+                  </p>
+                  <div class="item-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-count">(41)</span>
+                  </div>
+                  <div class="item-stock in-stock">✓ Skladem</div>
+                  <div class="item-price-row">
+                    <span class="item-price">3 999 Kč</span>
+                    <span class="item-price-old">4 999 Kč</span>
+                  </div>
+                </div>
+              </a>
+              <button class="btn-add-to-cart">Přidat do košíku</button>
+            </div>
+          </div>
+
+          <!-- Přidat všechny do košíku -->
+          <div class="bulk-actions">
+            <button class="btn-add-all-to-cart">
+              Přidat všechny do košíku (5 produktů)
+            </button>
+          </div>
+
+          <!-- Prázdný wishlist (skrytý, jen pro ukázku) -->
+          <!-- <div class="empty-wishlist">
                     <div class="empty-icon">💔</div>
                     <h2>Zatím nemáte žádné oblíbené produkty</h2>
                     <p>Přidejte si produkty kliknutím na ❤️ a snadno se k nim vraťte</p>
                     <a href="produkty.html" class="btn-browse">Procházet produkty</a>
                 </div> -->
 
-                <!-- Tipy -->
-                <div class="wishlist-tips">
-                    <h3>💡 Věděli jste, že...</h3>
-                    <div class="tips-grid">
-                        <div class="tip-card">
-                            <span class="tip-icon">🔔</span>
-                            <p><strong>Upozornění na slevy:</strong> Budeme vás informovat, když produkty ze seznamu budou ve slevě</p>
-                        </div>
-                        <div class="tip-card">
-                            <span class="tip-icon">📱</span>
-                            <p><strong>Synchronizace:</strong> Váš seznam je uložen a dostupný na všech zařízeních</p>
-                        </div>
-                        <div class="tip-card">
-                            <span class="tip-icon">🎁</span>
-                            <p><strong>Sdílení:</strong> Seznam můžete sdílet s přáteli jako tip na dárek</p>
-                        </div>
-                    </div>
-                </div>
+          <!-- Tipy -->
+          <div class="wishlist-tips">
+            <h3>💡 Věděli jste, že...</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <span class="tip-icon">🔔</span>
+                <p>
+                  <strong>Upozornění na slevy:</strong> Budeme vás informovat,
+                  když produkty ze seznamu budou ve slevě
+                </p>
+              </div>
+              <div class="tip-card">
+                <span class="tip-icon">📱</span>
+                <p>
+                  <strong>Synchronizace:</strong> Váš seznam je uložen a
+                  dostupný na všech zařízeních
+                </p>
+              </div>
+              <div class="tip-card">
+                <span class="tip-icon">🎁</span>
+                <p>
+                  <strong>Sdílení:</strong> Seznam můžete sdílet s přáteli jako
+                  tip na dárek
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Patička -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>O nás</h4>
-                    <p>Specializujeme se na kvalitní horolezecké a outdoorové vybavení pro lezce všech úrovní.</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Zákaznický servis</h4>
-                    <ul>
-                        <li><a href="#">Časté dotazy</a></li>
-                        <li><a href="#">Doprava a platba</a></li>
-                        <li><a href="#">Reklamace</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Důležité odkazy</h4>
-                    <ul>
-                        <li><a href="#">Obchodní podmínky</a></li>
-                        <li><a href="#">Ochrana osobních údajů</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Sledujte nás</h4>
-                    <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>O nás</h4>
+            <p>
+              Specializujeme se na kvalitní horolezecké a outdoorové vybavení
+              pro lezce všech úrovní.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Zákaznický servis</h4>
+            <ul>
+              <li><a href="#">Časté dotazy</a></li>
+              <li><a href="#">Doprava a platba</a></li>
+              <li><a href="#">Reklamace</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Důležité odkazy</h4>
+            <ul>
+              <li><a href="#">Obchodní podmínky</a></li>
+              <li><a href="#">Ochrana osobních údajů</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Sledujte nás</h4>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 HoroShop. Všechna práva vyhrazena.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 HoroShop. Všechna práva vyhrazena.</p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
