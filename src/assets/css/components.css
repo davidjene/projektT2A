@@ -1146,6 +1146,12 @@ footer {
   border-bottom: 2px solid var(--color-gray-200);
 }
 
+.filters-header h2 {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
 .filters-header h3 {
   font-size: 1.3rem;
   color: var(--color-text);
@@ -4006,6 +4012,10 @@ button.btn-remove-item,
   background: linear-gradient(to bottom, #f0f4ff 0%, var(--color-white) 100%);
 }
 
+.confirmation-section .success-message {
+  color: #34495e;
+}
+
 .success-banner {
   text-align: center;
   background: var(--color-white);
@@ -4066,6 +4076,7 @@ button.btn-remove-item,
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-2xl);
   box-shadow: var(--shadow-md);
+  margin-bottom: 1rem;
 }
 
 .summary-box h3 {
@@ -4168,6 +4179,7 @@ button.btn-remove-item,
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-2xl);
   box-shadow: var(--shadow-md);
+  margin-bottom: 1rem;
 }
 
 .price-summary h3 {
