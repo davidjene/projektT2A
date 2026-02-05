@@ -3765,6 +3765,7 @@ button.btn-remove-item,
 .quick-contact-box h2 {
   font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-md);
+  color: var(--color-white)
 }
 
 .quick-contact-box p {
