@@ -3263,6 +3263,10 @@ button.btn-remove-item,
   margin-bottom: var(--spacing-2xl);
 }
 
+.trust-section h3 {
+  font-size: var(--font-size-md);
+}
+
 .trust-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
