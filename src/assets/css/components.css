@@ -3967,7 +3967,7 @@ button.btn-remove-item,
 .cta-section {
   padding: var(--spacing-4xl) 0;
   background: var(--gradient-success);
-  color: var(--color-white);
+  color: var(--color-gray-300);
 }
 
 .cta-content {

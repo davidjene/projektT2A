@@ -39,7 +39,7 @@ h6 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  color: var(--color-text);
+  color: var(--color-white);
 }
 
 h1 {
